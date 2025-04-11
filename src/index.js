@@ -148,5 +148,6 @@ function updateBackgroundImage() {
 
 window.addEventListener('resize', updateBackgroundImage);
 
+// await fetchInfoFromIp();
 fetchInfoFromIp();
 updateBackgroundImage();
