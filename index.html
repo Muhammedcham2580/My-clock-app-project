@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class=" overflow-hidden">
+  <div id="app">
+    <div
+      class="content-container flex flex-col w-full h-[100vh] justify-between bg-[url('/mobile/bg-image-daytime.jpg')] sm:bg-[url('/tablet/bg-image-daytime.jpg')] md:bg-[url('/bg-image-daytime.jpg')] bg-cover bg-center bg-no-repeat bg-black/50 bg-blend-overlay">
+      <div id="quotes" class="h-[50vh] text-white w-full md:w-1/2 p-4 md:p-25">
+        <div class="flex justify-evenly items-start">
+          <p id="random-quote" class="text-lg">&quot;The science of operations, as derived from mathematics more
+            especially, is a science of itself, and has its own abstract truth and value.&quot;</p>
+          <button id="new-quote-button" class="cursor-pointer pt-2"><img class="w-7" src="/icon-refresh.svg"
+              alt="refresh"></button>
+        </div>
+        <h2 id="quote-author" class="text-xl font-bold mt-3">Ada Lovelace</h2>
+      </div>
+      <div id="time" class=" h-[50vh] text-white p-3 md:p-25">
+        <div class="flex gap-2 items-center pb-3">
+          <img id="sun-moon-icon-image" src="/icon-sun.svg" alt="Sun Image">
+          <p id="when" class="text-xl md:text-2xl">GOOD MORNING, IT'S CURRENTLY</p>
+        </div>
+        <div class="p-1 flex items-end">
+          <h1 id="location-time" class="text-5xl md:text-9xl font-bold">12:00</h1>
+          <p id="location-timezone" class="text-2xl md:text-4xl pl-3 pb-3">BST</p>
+        </div>
+        <div class="flex md:justify-between flex-col md:flex-row gap-2 ">
+          <p class="text-xl md:text-2xl font-bold">IN <b class="city-country">LONDON, UK</b></p>
+          <button id="switch-more-less"
+            class="cursor-pointer bg-white rounded-4xl text-gray-400 py-1 px-1 flex justify-between items-center gap-2 w-[40%] md:w-auto">
+            <div class="switch-button-text pl-2 text-lg">MORE</div> <img id="switch-button-icon"
+              class="hover:bg-black/50 p-3 rounded-full bg-black" src="/icon-arrow-down.svg" alt="switch-icon">
+          </button>
+        </div>
+      </div>
+      <div id="timezone" class="hidden flex md:flex-row flex-col justify-evenly h-[50vh] py-0 p-3 md:p-0 md:py-15">
+        <div class="flex flex-col gap-7 md:gap-0 md:justify-evenly w-full md:w-1/2 pl-0 md:pl-25">
+          <div class="flex flex-row md:flex-col justify-between items-center md:items-start">
+            <p class="text-sm md:text-base">CURRENT TIMEZONE</p>
+            <h2 id="the-timezone" class="text-lg md:text-5xl font-bold">EUROPE/LONDON</h2>
+          </div>
+          <div class="flex flex-row md:flex-col justify-between md:gap-3">
+            <p class="text-sm md:text-base">DAY OF THE YEAR</p>
+            <h2 id="day-of-year" class="text-ls md:text-5xl font-bold">1</h2>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-7 md:gap-0 md:justify-evenly w-full md:w-1/2 pl-0 md:pl-25 md:border-l-2 md:border-gray-400">
+          <div class="flex flex-row md:flex-col justify-between md:gap-3">
+            <p class="text-sm md:text-base">DAY OF THE WEEK</p>
+            <h2 id="day-of-week" class="text-lg md:text-5xl font-bold">5</h2>
+          </div>
+          <div class="flex flex-row md:flex-col justify-between md:gap-3">
+            <p class="text-sm md:text-base">WEEK NUMBER</p>
+            <h2 id="week-number" class="text-lg md:text-5xl font-bold">42</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="src/index.js"></script>
+</body>
+
+</html>
