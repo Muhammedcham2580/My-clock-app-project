@@ -53,7 +53,7 @@ toggleButton.addEventListener("click", () => {
 quoteRefreshBtn.addEventListener("click", fetchQuote);
 
 // IP & time fetch
-const ipbase = new Ipbase("ipb_live_tmnTT1JG6ZYgX18dXvLhRq5guKRn9q94NMhNQuta");
+const ipbase = new Ipbase("ipb_live_nhLHEBAThN3476rvfBvmOqIcoDfmj9LpiSwiHfeW");
 async function loadUserDetails() {
   try {
     const response = await ipbase.info();
